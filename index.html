@@ -1,136 +1,64 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>South Matka - India's No. 1 Trusted App</title>
-    
+    <title>Mahakal Matka - Official Site</title>
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2672845126425513');
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID_HERE'); // YAHAN APNA PIXEL ID DALO
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2672845126425513&ev=PageView&noscript=1"
-    /></noscript>
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @keyframes fadeUp {
-            0% { transform: translate(-50%, 20px); opacity: 0; }
-            10% { transform: translate(-50%, 0); opacity: 1; }
-            90% { transform: translate(-50%, 0); opacity: 1; }
-            100% { transform: translate(-50%, -20px); opacity: 0; }
-        }
-        .winning-popup { position: fixed; top: 15px; left: 50%; transform: translateX(-50%); z-index: 100; width: 92%; max-width: 400px; animation: fadeUp 4s infinite; }
-        .btn-shine { position: relative; overflow: hidden; }
-        .btn-shine:after { content: ""; background: rgba(255,255,255,0.4); display: block; position: absolute; top: 0; left: -100px; right: -100px; bottom: 0; transform: skewX(-45deg); animation: shine 2.5s infinite; }
-        @keyframes shine { 0% { left: -100px; } 100% { left: 100%; } }
-        .blink { animation: blinker 1.5s linear infinite; }
-        @keyframes blinker { 50% { opacity: 0; } }
+        body { font-family: 'Arial', sans-serif; background-color: #0d1117; color: white; margin: 0; text-align: center; }
+        .header { background: linear-gradient(90deg, #1a237e, #0d47a1); padding: 20px; font-size: 24px; font-weight: bold; color: #ffeb3b; }
+        .hero { padding: 40px 20px; background: url('https://www.transparenttextures.com/patterns/dark-matter.png'); }
+        .hero h1 { color: #ff3d00; font-size: 32px; margin-bottom: 10px; }
+        .hero p { font-size: 18px; color: #cfd8dc; }
+        .download-btn { display: inline-block; background: #c62828; color: white; padding: 15px 40px; font-size: 22px; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; box-shadow: 0 4px 15px rgba(255,0,0,0.4); animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        .rates-table { width: 90%; margin: 30px auto; border-collapse: collapse; background: #1c2128; border-radius: 10px; overflow: hidden; }
+        .rates-table th, .rates-table td { padding: 15px; border: 1px solid #30363d; text-align: center; }
+        .rates-table th { background: #1a237e; color: #ffeb3b; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .footer { padding: 20px; font-size: 12px; color: #8b949e; border-top: 1px solid #30363d; margin-top: 40px; }
     </style>
 </head>
-<body class="bg-[#080808] text-white font-sans overflow-x-hidden">
+<body>
 
-    <div id="popup" class="winning-popup">
-        <div class="bg-green-600 border border-green-400 text-white px-4 py-3 rounded-2xl shadow-2xl flex items-center justify-between">
-            <div class="flex flex-col">
-                <span id="winner-text" class="text-sm font-bold">🎉 Vikram ne ₹7,500 withdraw kiye!</span>
-                <span class="text-[10px] opacity-90 italic">Success via UPI</span>
-            </div>
-            <span class="bg-white text-green-600 px-2 py-1 rounded-lg text-[10px] font-black animate-pulse">LIVE</span>
-        </div>
-    </div>
+<div class="header">MAHAKAL MATKA</div>
 
-    <div class="min-h-screen flex flex-col items-center px-4 pb-32">
-        <div class="mt-10 text-center">
-            <div class="w-28 h-28 mx-auto p-1 bg-gradient-to-tr from-yellow-500 to-red-600 rounded-3xl shadow-lg">
-                <img src="logo.png" alt="South Matka" class="w-full h-full rounded-2xl object-cover">
-            </div>
-            <h1 class="mt-4 text-4xl font-black text-yellow-500 italic uppercase">SOUTH MATKA</h1>
-            <p class="text-red-500 text-[10px] font-bold tracking-[0.3em] uppercase mt-1 italic">India's Fastest Result App</p>
-        </div>
+<div class="hero">
+    <h1>Welcome to Mahakal Matka Online</h1>
+    <p>India's Most Trusted & Fastest Matka App</p>
+    <a href="https://mahakalmatka.cloud/mahakaal-release-1.apk" class="download-btn" onclick="fbq('track', 'Lead');">📥 DOWNLOAD APP NOW</a>
+    <p style="margin-top:15px; font-size:14px; color:#4caf50;">✔ 100% Safe & Secure | Instant Payout</p>
+</div>
 
-        <div class="w-full max-w-sm mt-8 bg-zinc-900 border border-zinc-800 rounded-[2.5rem] p-6 relative shadow-2xl">
-            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-500 text-black px-6 py-1 rounded-full text-[10px] font-black uppercase">Official Offer</div>
-            
-            <div class="text-center mt-2">
-                <p class="text-zinc-400 text-[11px] uppercase">Download karke paayein</p>
-                <h2 class="text-5xl font-black text-white mt-1 uppercase">₹100 <span class="text-yellow-500 font-black">FREE</span></h2>
-                <p class="text-yellow-500 font-bold text-xs mt-1 italic">Sign-up Bonus Credit</p>
-            </div>
+<table class="rates-table">
+    <thead>
+        <tr><th colspan="2">OUR GAME RATES</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Single Digit</td><td>10 ka 100</td></tr>
+        <tr><td>Jodi Digit</td><td>10 ka 1000</td></tr>
+        <tr><td>Single Panna</td><td>10 ka 1500</td></tr>
+        <tr><td>Double Panna</td><td>10 ka 3000</td></tr>
+    </tbody>
+</table>
 
-            <div class="mt-6 bg-black/40 rounded-2xl border border-white/5 overflow-hidden">
-                <h4 class="bg-zinc-800/50 py-2 text-center text-yellow-500 text-[10px] font-black uppercase">Extra Deposit Bonus</h4>
-                <table class="w-full text-[11px] text-center">
-                    <tr class="border-b border-white/5 bg-zinc-800/20">
-                        <td class="py-2 text-zinc-400">Deposit</td>
-                        <td class="py-2 text-green-500">Bonus</td>
-                        <td class="py-2 text-yellow-500 italic">Total</td>
-                    </tr>
-                    <tr class="border-b border-white/5">
-                        <td class="py-2 font-bold">₹100</td>
-                        <td class="py-2 text-green-500">+ ₹100</td>
-                        <td class="py-2 font-black">₹200</td>
-                    </tr>
-                    <tr class="border-b border-white/5 bg-yellow-500/10">
-                        <td class="py-2 font-bold text-yellow-500">₹500</td>
-                        <td class="py-2 text-green-500">+ ₹600</td>
-                        <td class="py-2 font-black text-white">₹1100</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 font-bold">₹1000</td>
-                        <td class="py-2 text-green-500">+ ₹1500</td>
-                        <td class="py-2 font-black">₹2500</td>
-                    </tr>
-                </table>
-            </div>
+<div class="footer">
+    <p>Risk Warning: This game involves financial risk. Please play responsibly. 18+ Only.</p>
+    <p>&copy; 2026 Mahakal Matka Official</p>
+</div>
 
-            <a href="SouthMatka.apk" onclick="fbq('track', 'Lead');" class="btn-shine mt-6 block w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-black text-center py-5 rounded-2xl font-black text-xl shadow-lg transform active:scale-95 transition-all">
-                DOWNLOAD & CLAIM
-            </a>
-        </div>
+<a href="https://wa.me/91YOUR_NUMBER" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35" alt="WhatsApp">
+</a>
 
-        <div class="mt-8 w-full max-w-sm">
-            <a href="https://wa.me/919602276755?text=Bhai%20Mujhe%20South%20Matka%20mein%20Deposit%20karna%20hai" class="flex items-center justify-center gap-3 w-full bg-[#1da851] text-white py-4 rounded-2xl font-bold shadow-xl border-b-4 border-[#128c42]">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="h-6 invert">
-                WHATSAPP ADMIN
-            </a>
-            <p class="text-center text-zinc-500 text-[9px] mt-3 font-bold uppercase tracking-widest">24/7 Fast Deposit/Withdrawal Support</p>
-        </div>
-    </div>
-
-    <div class="fixed bottom-0 left-0 right-0 p-4 bg-black/90 backdrop-blur-md border-t border-white/10 z-50">
-        <div class="flex items-center justify-between">
-            <div class="flex flex-col">
-                <span class="text-green-500 text-[10px] font-black uppercase blink italic">● Online Users</span>
-                <span class="text-xl font-black text-white tracking-widest">14,807+</span>
-            </div>
-            <a href="SouthMatka.apk" onclick="fbq('track', 'Lead');" class="bg-yellow-500 text-black px-10 py-3 rounded-xl font-black text-sm shadow-md">PLAY NOW</a>
-        </div>
-    </div>
-
-    <script>
-        const winners = [
-            {n: "Rahul", a: "2,500"}, {n: "Amit", a: "5,000"}, {n: "Sonu", a: "4,999"},
-            {n: "Vijay", a: "10,000"}, {n: "Karan", a: "3,100"}, {n: "Arjun", a: "7,200"}
-        ];
-        const textElem = document.getElementById('winner-text');
-        const popup = document.getElementById('popup');
-
-        setInterval(() => {
-            const w = winners[Math.floor(Math.random() * winners.length)];
-            textElem.innerText = `🎉 ${w.n} ne abhi ₹${w.a} withdraw kiye!`;
-            popup.style.animation = 'none';
-            popup.offsetHeight; 
-            popup.style.animation = null;
-        }, 4000);
-    </script>
 </body>
 </html>
