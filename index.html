@@ -1,76 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '744880191602103');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=744880191602103&ev=PageView&noscript=1"
-    /></noscript>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahakal Rewards - Official Platform</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0a0a0a; color: white; margin: 0; text-align: center; }
-        .header { background: #1a1a1a; padding: 15px; border-bottom: 2px solid #ffcc00; }
-        .logo { font-size: 28px; font-weight: bold; color: #ffcc00; text-transform: uppercase; }
-        .trust-banner { background: #28a745; color: white; padding: 5px; font-size: 14px; font-weight: bold; }
-        .hero { padding: 30px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://mahakalmatka.cloud/assets/images/banner.jpg'); background-size: cover; }
-        .main-btn { display: inline-block; background: #ff3d00; color: white; padding: 18px 40px; font-size: 24px; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 20px 0; box-shadow: 0 5px 20px rgba(255,61,0,0.5); }
-        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 20px; }
-        .f-card { background: #1c1c1c; padding: 15px; border-radius: 10px; border: 1px solid #333; }
-        .f-card h3 { margin: 0; color: #ffcc00; font-size: 16px; }
-        .f-card p { margin: 5px 0 0; font-size: 12px; color: #ccc; }
-        .rates-table { width: 90%; margin: 20px auto; background: #111; border-radius: 10px; border-collapse: collapse; }
-        .rates-table td { padding: 12px; border: 1px solid #333; font-weight: bold; }
-        .rates-table .title { background: #ffcc00; color: #000; }
-        .wa-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>महाकाल मटका | Telegram Channel</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2757667714573291');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2757667714573291&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{
+    margin:0;
+    background:radial-gradient(circle at top,#0f2a2a,#000);
+    color:#fff;
+    text-align:center;
+}
+.container{
+    max-width:420px;
+    margin:auto;
+    padding:35px 20px 80px;
+}
+
+/* LOGO */
+.logo{
+    width:130px;
+    height:130px;
+    margin:20px auto;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow:0 0 30px rgba(0,255,200,.8);
+}
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+h1{font-size:28px;margin:15px 0 5px}
+.subtitle{color:#9fffe8;font-size:15px;margin-bottom:20px}
+
+.info{
+    background:rgba(255,255,255,.06);
+    border-radius:14px;
+    padding:18px;
+    margin-bottom:22px;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* TELEGRAM */
+.tg-btn{
+    display:block;
+    background:linear-gradient(90deg,#00ffd5,#00c2ff);
+    color:#000;
+    text-decoration:none;
+    padding:16px;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:bold;
+    margin:20px 0 12px;
+    box-shadow:0 0 25px rgba(0,255,200,.9);
+}
+
+/* WHATSAPP BELOW TG */
+.wa-btn{
+    display:block;
+    background:#25D366;
+    color:#000;
+    text-decoration:none;
+    padding:14px;
+    border-radius:40px;
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+/* FLOATING WHATSAPP */
+.wa-float{
+    position:fixed;
+    right:15px;
+    bottom:15px;
+    background:#25D366;
+    color:#000;
+    padding:14px 18px;
+    border-radius:50px;
+    font-weight:bold;
+    text-decoration:none;
+    box-shadow:0 0 20px rgba(37,211,102,.9);
+    z-index:999;
+}
+
+.point{
+    background:rgba(255,255,255,.06);
+    padding:14px;
+    border-radius:12px;
+    margin-bottom:12px;
+    font-size:15px;
+}
+
+.disclaimer{
+    font-size:12px;
+    color:#ccc;
+    margin-top:25px;
+}
+</style>
 </head>
+
 <body>
 
-<div class="trust-banner">✓ Verified Secure Platform | 100% Instant Payout</div>
-<div class="header"><div class="logo">Mahakal<span style="color:white">Digital</span></div></div>
+<div class="container">
 
-<div class="hero">
-    <h1 style="color:#ffcc00; margin-bottom:5px;">Digital Rewards & Skills</h1>
-    <p>India's Most Trusted Online Platform</p>
-    <a href="https://mahakalmatka.cloud/mahakaal-release-1.apk" class="main-btn">📲 DOWNLOAD APP</a>
-    <p style="font-size:12px;">Sign up and get ₹100 Welcome Bonus</p>
+    <div class="logo">
+        <img src="logo.png" alt="Mahakal Matka">
+    </div>
+
+    <h1>महाकाल मटका</h1>
+    <div class="subtitle">विश्वसनीय जानकारी • सीधा अपडेट</div>
+
+    <div class="info">
+        गलत जगह पैसा लगाने से बचें।  
+        सही जानकारी के लिए हमारा टेलीग्राम चैनल जॉइन करें।
+    </div>
+
+    <a class="tg-btn" href="https://t.me/+SpfMgadTNExlYWY9">
+        🚀 टेलीग्राम चैनल जॉइन करें
+    </a>
+
+    <a class="wa-btn" href="https://wa.me/918094091370" target="_blank">
+        💬 WhatsApp पर संपर्क करें
+    </a>
+
+    <div class="point">✔️ बिना एडवांस फीस</div>
+    <div class="point">✔️ केवल जानकारी के उद्देश्य से</div>
+    
+
+    <div class="disclaimer">
+        सूचना: यह पेज केवल जानकारी व मनोरंजन हेतु है।
+    </div>
+
 </div>
 
-<div class="features">
-    <div class="f-card"><h3>FAST PAYOUT</h3><p>Withdrawal in 5-10 Mins</p></div>
-    <div class="f-card"><h3>24/7 SUPPORT</h3><p>WhatsApp & Call Help</p></div>
-    <div class="f-card)<h3>100% SAFE</h3><p>Secure Transactions</p></div>
-    <div class="f-card"><h3>LIVE UPDATES</h3><p>Super Fast Results</p></div>
-</div>
-
-<table class="rates-table">
-    <tr class="title"><td colspan="2">SPECIAL OFFERS</td></tr>
-    <tr><td>Digital Tier 1</td><td>10 का 100</td></tr>
-    <tr><td>Digital Tier 2</td><td>10 का 1000</td></tr>
-    <tr><td>Premium Tier</td><td>10 का 1500</td></tr>
-</table>
-
-<div style="padding: 20px; font-size: 10px; color: #666;">
-    *Terms & Conditions Apply. Play Responsibly. 18+ Only.
-</div>
-
-<a href="https://wa.me/91" class="wa-float">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35">
+<a class="wa-float" href="https://wa.me/918094091370" target="_blank">
+    💬 WhatsApp
 </a>
 
 </body>
 </html>
-
-
